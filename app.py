@@ -49,9 +49,9 @@ def handle_message(event):
             event.reply_token,
             sticker_message) 
 
+return
 
-
-    elif msg in ["hi",'Hi']:
+    if msg in ["hi",'Hi']:
        r = "嗨"
     elif msg == '你是誰':
         r = "我是機械人"

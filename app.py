@@ -41,13 +41,13 @@ def handle_message(event):
     
     if '你好' in msg:
         sticker_message = StickerSendMessage(
-             package_id='10',
-             sticker_id='1'
+             package_id='2',
+             sticker_id='23'
          )
 
          line_bot_api.reply_message(
-         event.reply_token,
-         sticker_message) 
+            event.reply_token,
+            sticker_message) 
 
 
 

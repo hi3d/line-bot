@@ -51,16 +51,7 @@ def handle_message(event):
 
 return
 
-    if msg in ["hi",'Hi']:
-       r = "嗨"
-    elif msg == '你是誰':
-        r = "我是機械人"
-    elif '?' in msg:
-        r = '想問什麼事,是嗎?'
-
-    line_bot_api.reply_message(
-        event.reply_token,
-        TextSendMessage(text=r))
+  
 
 
 if __name__ == "__main__":

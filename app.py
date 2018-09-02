@@ -39,7 +39,7 @@ def handle_message(event):
     msg = event.message.text
     r = "我看不懂你在說什麼??"
 
-if '你好' in msg:
+    if '你好' in msg:
         sticker_message = StickerSendMessage(
              package_id='2',
              sticker_id='23'
@@ -49,13 +49,7 @@ if '你好' in msg:
             event.reply_token,
             sticker_message) 
 
-return
-
-
-
-
-    
-    if msg in ["hi",'Hi']:
+    elif msg in ["hi",'Hi']:
        r = "嗨"
     elif msg == '你是誰':
         r = "我是機械人"
